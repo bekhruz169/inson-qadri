@@ -1,9 +1,8 @@
 /**
- * Core TypeScript interfaces for Frame Portfolio
- * Based on SPECIFICATION.md data model requirements
+ * Core TypeScript interfaces for INSON QADRI MEDIA PRODUCTION
  */
 
-export type ProjectCategory = 'portraits' | 'landscapes' | 'editorial' | 'architecture' | 'documentary';
+export type ProjectCategory = 'ijtimoiy' | 'oilaviy' | 'hayotiy' | 'brend';
 
 export type AspectRatio = 'portrait' | 'landscape' | 'square';
 
@@ -24,36 +23,55 @@ export interface Project {
   images: ProjectImage[];
   description: string;
   client?: string;
-  camera?: string;
+  views?: string;
   location?: string;
   slug: string;
 }
 
-export interface PhotographerInfo {
+export interface CompanyInfo {
   name: string;
   tagline: string;
   heroIntroduction: string;
-  biography: string;
-  approach: string;
-  awards: string[];
-  clients: string[];
-  education: string;
+  about: string;
+  mission: string;
+  principle: string;
   location: string;
   email: string;
   phone: string;
-  availability: string;
+  telegram?: string;
   socialLinks: {
     instagram?: string;
-    linkedin?: string;
-    behance?: string;
+    youtube?: string;
+    telegram?: string;
   };
-  portraitImage: string;
+  logoImage?: string;
 }
+
+// Legacy alias for compatibility
+export type PhotographerInfo = CompanyInfo;
 
 export interface ContactSubmission {
   name: string;
   email: string;
-  projectType: 'editorial' | 'commercial' | 'personal';
+  projectType: 'brend' | 'davlat' | 'ijtimoiy';
   message: string;
   timestamp: Date;
+}
+
+export interface ServiceDirection {
+  id: string;
+  icon: string;
+  title: string;
+  items: string[];
+}
+
+export interface Capability {
+  id: string;
+  title: string;
+  description: string;
+}
+
+export interface WorkStep {
+  number: number;
+  title: string;
 }

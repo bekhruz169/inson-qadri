@@ -1,41 +1,152 @@
-import type { PhotographerInfo } from '@/types';
+import type { CompanyInfo, ServiceDirection, Capability, WorkStep } from '@/types';
 
-export const photographerInfo: PhotographerInfo = {
-  name: 'Sarah Mitchell',
-  tagline: 'Editorial & Commercial Photographer',
-  heroIntroduction: 'Creating visual narratives that capture authentic moments and timeless stories.',
-  biography: `Sarah Mitchell is an award-winning photographer specializing in editorial and commercial work, with recognition including the International Photography Awards Editorial Photographer of the Year 2023 and PDN Photo Annual Winner 2022. With over a decade of experience, her work has been featured in numerous international publications and exhibitions, collaborating with clients such as Vogue, The New York Times, National Geographic, Adobe, Apple, Nike, and Architectural Digest.
+// Backward compatibility alias
+export type PhotographerInfo = CompanyInfo;
 
-Based in New York with an MFA in Photography from the School of Visual Arts, Sarah brings a unique perspective to every project, combining technical excellence with artistic vision. Her approach to photography is deeply rooted in storytelling, believing that every image should convey emotion and meaning beyond its visual appeal.`,
-  approach: `My photography is guided by three principles: authenticity, composition, and light. I believe the best images emerge when subjects feel comfortable and genuine, when composition guides the viewer's eye naturally, and when light reveals the essence of the moment.
+export const photographerInfo: CompanyInfo = {
+  name: 'INSON QADRI',
+  tagline: 'MEDIA PRODUCTION',
+  heroIntroduction: 'Biz jamiyatdagi real muammolarni ko\'taradigan, odamlarni o\'ylantiradigan, tarbiyalaydigan va harakatga undaydigan ta\'sirli video kontentlar yaratamiz.',
+  about: `INSON QADRI MEDIA PRODUCTION — bu oddiy media jamoa emas.
 
-Whether working on editorial assignments or commercial projects, I strive to create images that transcend their immediate purpose and become lasting visual statements.`,
-  awards: [
-    'International Photography Awards - Editorial Photographer of the Year 2023',
-    'PDN Photo Annual - Winner 2022',
-    'Hasselblad Masters Finalist 2021',
-    'Communication Arts Photography Annual 2020'
-  ],
-  clients: [
-    'Vogue',
-    'The New York Times',
-    'National Geographic',
-    'Adobe',
-    'Apple',
-    'Nike',
-    'Patagonia',
-    'Architectural Digest'
-  ],
-  education: 'MFA Photography, School of Visual Arts, New York',
-  location: 'New York, NY',
-  email: 'hello@sarahmitchell.com',
-  phone: '+1 (555) 123-4567',
-  availability: 'Currently booking for Q2 2025',
+Biz — inson qadri, ijtimoiy mas'uliyat va ishonch asosida ishlaydigan ijodiy va strategik media platformamiz.
+
+Biz reklama qilmaymiz — mazmun orqali ishonch quramiz.`,
+  mission: `Bizning asosiy maqsadimiz:
+👉 inson qadrini ulug'lash
+👉 jamiyatda ongli fikrlashni kuchaytirish
+👉 va ishonchli kontent orqali foyda keltiradigan hamkorliklar yaratish
+
+Biz ishonamiz:
+Agar kontent foydali bo'lsa — u albatta tomosha qilinadi.
+Agar kontent rost bo'lsa — u albatta ishonch keltiradi.`,
+  principle: `Reklama o'tadi.
+Ishonch qoladi.
+Qadr esa doimiy.`,
+  location: 'O\'zbekiston',
+  email: 'hello@insonqadri.uz',
+  phone: '+998 90 123 45 67',
+  telegram: '@insonqadri',
   socialLinks: {
-    instagram: 'https://instagram.com/sarahmitchellphoto',
-    linkedin: 'https://linkedin.com/in/sarahmitchell',
-    behance: 'https://behance.net/sarahmitchell'
-  },
-  // Photo by Joshua Sun on Unsplash
-  portraitImage: 'https://images.unsplash.com/photo-1585279968680-6606ee6ed134?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjB8&ixlib=rb-4.1.0&q=80&w=1080'
+    instagram: 'https://instagram.com/insonqadri',
+    youtube: 'https://youtube.com/@insonqadri',
+    telegram: 'https://t.me/insonqadri'
+  }
 };
+
+export const serviceDirections: ServiceDirection[] = [
+  {
+    id: 'ijtimoiy',
+    icon: '🔹',
+    title: 'Ijtimoiy kontent',
+    items: [
+      'Jamiyatdagi dolzarb muammolar',
+      'Insoniy qadriyatlar',
+      'Mas\'uliyat, halollik, vijdon'
+    ]
+  },
+  {
+    id: 'oilaviy',
+    icon: '🔹',
+    title: 'Oilaviy va tarbiyaviy kontent',
+    items: [
+      'Ota-ona va farzand munosabatlari',
+      'Oila qadri',
+      'Tarbiya va hayotiy saboqlar'
+    ]
+  },
+  {
+    id: 'hayotiy',
+    icon: '🔹',
+    title: 'Hayotiy syujetlar',
+    items: [
+      'Real voqealarga asoslangan videolar',
+      'Tomoshabinni o\'zini ko\'radigan sahnalar',
+      'Kuchli dramatik yechimlar'
+    ]
+  },
+  {
+    id: 'brend',
+    icon: '🔹',
+    title: 'Brendlar bilan syujetli hamkorlik',
+    items: [
+      'Reklama emas — hikoya',
+      'Majburiy sotuv emas — ishonch',
+      'Bir martalik emas — uzoq muddatli ta\'sir'
+    ]
+  }
+];
+
+export const capabilities: Capability[] = [
+  {
+    id: '1',
+    title: 'Kuchli ssenariy va dramaturgiya',
+    description: 'Professional yozuvchilar jamoasi'
+  },
+  {
+    id: '2',
+    title: 'Professional video prodakshn',
+    description: 'Zamonaviy texnika va tajriba'
+  },
+  {
+    id: '3',
+    title: 'Ijtimoiy tarmoqlarda keng tarqatish',
+    description: 'Millionlab ko\'rishlar'
+  },
+  {
+    id: '4',
+    title: 'Repost va organik o\'sishga mos kontent',
+    description: 'Viral potentsial'
+  },
+  {
+    id: '5',
+    title: 'Individual yondashuv',
+    description: 'Har bir brend va loyiha uchun'
+  }
+];
+
+export const workSteps: WorkStep[] = [
+  { number: 1, title: 'Loyiha va maqsadni tushunamiz' },
+  { number: 2, title: 'Auditoriyaga mos syujet ishlab chiqamiz' },
+  { number: 3, title: 'Kontentni professional tarzda suratga olamiz' },
+  { number: 4, title: 'To\'g\'ri formatda e\'lon qilamiz' },
+  { number: 5, title: 'Natijaga ishlaymiz' }
+];
+
+export const audienceStats = {
+  views: 'Millionlab ko\'rishlar',
+  engagement: 'Faol, fikrlaydigan va ishonadigan auditoriya',
+  values: 'Oila, jamiyat va qadriyatlarga befarq bo\'lmagan odamlar'
+};
+
+export const businessBenefits = [
+  'Brendingizga ishonch',
+  'Auditoriya ko\'zida obro\'',
+  'Reklama sezilmaydigan syujetli integratsiya',
+  'Uzoq muddatli ta\'sir'
+];
+
+export const targetBusinesses = [
+  'Ijtimoiy mas\'uliyatli kompaniyalar',
+  'Oilaviy, ta\'limiy, tibbiy, servis va savdo sohalari',
+  'Sifat va qadriyatni ustuvor qo\'yadigan brendlar'
+];
+
+export const governmentServices = [
+  'Ijtimoiy kampaniyalar',
+  'Tarbiyaviy tashabbuslar',
+  'Ma\'naviy-ma\'rifiy loyihalar',
+  'Yoshlar va oila bilan bog\'liq dasturlar'
+];
+
+export const contentBenefits = [
+  'O\'ylashga majbur qiladigan kontent',
+  'Hayotdan saboq beradigan voqealar',
+  'Ijobiy o\'zgarishga turtki'
+];
+
+export const contentResults = [
+  'Tomosha qilinadi',
+  'Ulashiladi',
+  'Esda qoladi'
+];

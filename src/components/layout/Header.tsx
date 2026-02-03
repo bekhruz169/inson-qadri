@@ -10,10 +10,10 @@ import { photographerInfo } from '@/data/photographer';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { name: 'Home', path: '/' },
-  { name: 'Portfolio', path: '/portfolio' },
-  { name: 'About', path: '/about' },
-  { name: 'Contact', path: '/contact' },
+  { name: 'Bosh sahifa', path: '/' },
+  { name: 'Loyihalar', path: '/portfolio' },
+  { name: 'Biz haqimizda', path: '/about' },
+  { name: 'Bog\'lanish', path: '/contact' },
 ];
 
 /**
