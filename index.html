@@ -3,22 +3,437 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My App</title>
-    <meta name="description" content="A beautiful web application" />
-    <meta name="author" content="Lovable" />
-
-    <meta property="og:title" content="My App" />
-    <meta property="og:description" content="A beautiful web application" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <title>INSON QADRI MEDIA PRODUCTION</title>
+    <meta name="description" content="INSON QADRI MEDIA PRODUCTION — inson qadri, ijtimoiy mas'uliyat va ishonch asosida ishlaydigan ijodiy va strategik media platforma." />
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
-
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-text">INSON QADRI</span>
+                <span class="logo-subtitle">MEDIA PRODUCTION</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link active">Bosh sahifa</a>
+                <a href="portfolio.html" class="nav-link">Loyihalar</a>
+                <a href="about.html" class="nav-link">Biz haqimizda</a>
+                <a href="contact.html" class="nav-link">Bog'lanish</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Menyu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link active">Bosh sahifa</a>
+            <a href="portfolio.html" class="mobile-nav-link">Loyihalar</a>
+            <a href="about.html" class="mobile-nav-link">Biz haqimizda</a>
+            <a href="contact.html" class="mobile-nav-link">Bog'lanish</a>
+        </nav>
+    </header>
+ 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">
+                <span class="hero-title-line">INSON QADRI</span>
+                <span class="hero-title-line accent">MEDIA PRODUCTION</span>
+            </h1>
+            <p class="hero-subtitle">Biz reklama qilmaymiz — mazmun orqali ishonch quramiz</p>
+            <div class="hero-buttons">
+                <a href="portfolio.html" class="btn btn-primary">Loyihalarimiz</a>
+                <a href="contact.html" class="btn btn-outline">Bog'lanish</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Pastga aylantiring</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+ 
+    <!-- About Section -->
+    <section class="section section-about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Biz haqimizda</span>
+                <h2 class="section-title">Biz kimmiz?</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-lead">INSON QADRI MEDIA PRODUCTION — bu oddiy media jamoa emas.</p>
+                    <p>Biz — inson qadri, ijtimoiy mas'uliyat va ishonch asosida ishlaydigan ijodiy va strategik media platformamiz.</p>
+                    <p>Biz jamiyatdagi real muammolarni ko'taradigan, odamlarni o'ylantiradigan, tarbiyalaydigan va harakatga undaydigan ta'sirli video kontentlar yaratamiz.</p>
+                    <div class="about-highlight">
+                        <p><strong>Biz reklama qilmaymiz —</strong></p>
+                        <p><strong>mazmun orqali ishonch quramiz.</strong></p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-placeholder">
+                        <span>🎬</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Mission Section -->
+    <section class="section section-mission">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Maqsadimiz</span>
+                <h2 class="section-title">Bizning maqsadimiz</h2>
+            </div>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-icon">👉</div>
+                    <h3>Inson qadrini ulug'lash</h3>
+                    <p>Har bir kontentimizda inson qadriyatlarini birinchi o'ringa qo'yamiz</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">👉</div>
+                    <h3>Ongli fikrlashni kuchaytirish</h3>
+                    <p>Jamiyatda ongli va tanqidiy fikrlashni rivojlantiramiz</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">👉</div>
+                    <h3>Ishonchli hamkorlik</h3>
+                    <p>Ishonchli kontent orqali foyda keltiradigan hamkorliklar yaratamiz</p>
+                </div>
+            </div>
+            <div class="mission-beliefs">
+                <p class="belief">Agar kontent foydali bo'lsa — u albatta tomosha qilinadi.</p>
+                <p class="belief">Agar kontent rost bo'lsa — u albatta ishonch keltiradi.</p>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Directions Section -->
+    <section class="section section-directions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Xizmatlar</span>
+                <h2 class="section-title">Bizning yo'nalishlarimiz</h2>
+            </div>
+            <div class="directions-grid">
+                <div class="direction-card">
+                    <div class="direction-icon">🔹</div>
+                    <h3>Ijtimoiy kontent</h3>
+                    <ul>
+                        <li>Jamiyatdagi dolzarb muammolar</li>
+                        <li>Insoniy qadriyatlar</li>
+                        <li>Mas'uliyat, halollik, vijdon</li>
+                    </ul>
+                </div>
+                <div class="direction-card">
+                    <div class="direction-icon">🔹</div>
+                    <h3>Oilaviy va tarbiyaviy kontent</h3>
+                    <ul>
+                        <li>Ota-ona va farzand munosabatlari</li>
+                        <li>Oila qadri</li>
+                        <li>Tarbiya va hayotiy saboqlar</li>
+                    </ul>
+                </div>
+                <div class="direction-card">
+                    <div class="direction-icon">🔹</div>
+                    <h3>Hayotiy syujetlar</h3>
+                    <ul>
+                        <li>Real voqealarga asoslangan videolar</li>
+                        <li>Tomoshabinni o'zini ko'radigan sahnalar</li>
+                        <li>Kuchli dramatik yechimlar</li>
+                    </ul>
+                </div>
+                <div class="direction-card">
+                    <div class="direction-icon">🔹</div>
+                    <h3>Brendlar bilan syujetli hamkorlik</h3>
+                    <ul>
+                        <li>Reklama emas — hikoya</li>
+                        <li>Majburiy sotuv emas — ishonch</li>
+                        <li>Bir martalik emas — uzoq muddatli ta'sir</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Audience Section -->
+    <section class="section section-audience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Auditoriya</span>
+                <h2 class="section-title">Biz xalqimizga nima beryapmiz?</h2>
+            </div>
+            <div class="audience-content">
+                <div class="audience-gives">
+                    <h3>Biz auditoriyaga:</h3>
+                    <ul>
+                        <li>o'ylashga majbur qiladigan kontent</li>
+                        <li>hayotdan saboq beradigan voqealar</li>
+                        <li>ijobiy o'zgarishga turtki</li>
+                    </ul>
+                    <p>beramiz.</p>
+                </div>
+                <div class="audience-results">
+                    <h3>Bizning kontentlar:</h3>
+                    <div class="result-items">
+                        <div class="result-item">✔ tomosha qilinadi</div>
+                        <div class="result-item">✔ ulashiladi</div>
+                        <div class="result-item">✔ esda qoladi</div>
+                    </div>
+                    <p class="result-reason">Chunki u odamlar hayotiga tegadi.</p>
+                </div>
+            </div>
+            <div class="audience-stats">
+                <div class="stat">
+                    <span class="stat-icon">📊</span>
+                    <h4>Millionlab ko'rishlar</h4>
+                    <p>oladigan videolar</p>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">👥</span>
+                    <h4>Faol auditoriya</h4>
+                    <p>fikrlaydigan va ishonadigan</p>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">❤️</span>
+                    <h4>Qadriyatlar</h4>
+                    <p>Oila va jamiyatga befarq bo'lmagan</p>
+                </div>
+            </div>
+            <p class="audience-note">Bu auditoriya majbur bo'lgani uchun emas, <strong>ishongani uchun</strong> tomosha qiladi.</p>
+        </div>
+    </section>
+ 
+    <!-- For Business Section -->
+    <section class="section section-business">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tadbirkorlar uchun</span>
+                <h2 class="section-title">Biz bilan ishlasangiz nima olasiz?</h2>
+            </div>
+            <div class="business-content">
+                <div class="business-intro">
+                    <p>Biz Sizga oddiy reklama taklif qilmaymiz.</p>
+                    <p class="highlight">Biz <strong>natija beradigan media hamkorlik</strong> taklif qilamiz.</p>
+                </div>
+                <div class="business-benefits">
+                    <h3>Siz olasiz:</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit">✔ Brendingizga ishonch</div>
+                        <div class="benefit">✔ Auditoriya ko'zida obro'</div>
+                        <div class="benefit">✔ Reklama sezilmaydigan syujetli integratsiya</div>
+                        <div class="benefit">✔ Uzoq muddatli ta'sir</div>
+                    </div>
+                </div>
+                <div class="business-approach">
+                    <h3>Biz:</h3>
+                    <ul>
+                        <li>mahsulotingizni majburlab sotmaymiz</li>
+                        <li>bachkana reklama qilmaymiz</li>
+                        <li>auditoriyani charchatmaymiz</li>
+                    </ul>
+                    <p class="approach-highlight">Biz brendingizni hayotiy voqea ichiga joylaymiz.</p>
+                    <p class="approach-result">Tomoshabin reklama ko'rayotganini sezmaydi — <strong>lekin brend esda qoladi.</strong></p>
+                </div>
+            </div>
+            <div class="business-fit">
+                <h3>🎯 Bizga mos bizneslar:</h3>
+                <div class="fit-items">
+                    <span class="fit-item">ijtimoiy mas'uliyatli kompaniyalar</span>
+                    <span class="fit-item">oilaviy, ta'limiy, tibbiy sohalar</span>
+                    <span class="fit-item">servis va savdo sohalari</span>
+                    <span class="fit-item">sifat va qadriyatni ustuvor qo'yadigan brendlar</span>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- For Government Section -->
+    <section class="section section-government">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Davlat tashkilotlari uchun</span>
+                <h2 class="section-title">Qanday foydamiz bor?</h2>
+            </div>
+            <div class="government-content">
+                <div class="government-approach">
+                    <h3>Biz davlat tashkilotlari bilan ishlashda:</h3>
+                    <ul>
+                        <li>ijtimoiy loyihalarni ommaga tushunarli yetkazamiz</li>
+                        <li>targ'ibotni majburiy emas, ta'sirli qilamiz</li>
+                        <li>rasmiylikni buzmasdan, samimiy kontent yaratamiz</li>
+                    </ul>
+                </div>
+                <div class="government-help">
+                    <h3>Biz yordam beramiz:</h3>
+                    <div class="help-grid">
+                        <div class="help-item">✔ ijtimoiy kampaniyalar</div>
+                        <div class="help-item">✔ tarbiyaviy tashabbuslar</div>
+                        <div class="help-item">✔ ma'naviy-ma'rifiy loyihalar</div>
+                        <div class="help-item">✔ yoshlar va oila bilan bog'liq dasturlar</div>
+                    </div>
+                </div>
+                <div class="government-results">
+                    <h3>Natija:</h3>
+                    <p>— tomosha qilinadigan kontent</p>
+                    <p>— tushuniladigan xabar</p>
+                    <p>— real ta'sir</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Capabilities Section -->
+    <section class="section section-capabilities">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Imkoniyatlar</span>
+                <h2 class="section-title">Bizning imkoniyatlarimiz</h2>
+            </div>
+            <div class="capabilities-grid">
+                <div class="capability">
+                    <span class="capability-icon">📝</span>
+                    <h4>Kuchli ssenariy va dramaturgiya</h4>
+                </div>
+                <div class="capability">
+                    <span class="capability-icon">🎬</span>
+                    <h4>Professional video prodakshn</h4>
+                </div>
+                <div class="capability">
+                    <span class="capability-icon">📱</span>
+                    <h4>Ijtimoiy tarmoqlarda keng tarqatish</h4>
+                </div>
+                <div class="capability">
+                    <span class="capability-icon">🔄</span>
+                    <h4>Repost va organik o'sishga mos kontent</h4>
+                </div>
+                <div class="capability">
+                    <span class="capability-icon">🎯</span>
+                    <h4>Individual yondashuv</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Process Section -->
+    <section class="section section-process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Jarayon</span>
+                <h2 class="section-title">Biz qanday ishlaymiz?</h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Loyiha va maqsadni tushunamiz</h4>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Auditoriyaga mos syujet ishlab chiqamiz</h4>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Kontentni professional tarzda suratga olamiz</h4>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>To'g'ri formatda e'lon qilamiz</h4>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h4>Natijaga ishlaymiz</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Principle Section -->
+    <section class="section section-principle">
+        <div class="container">
+            <div class="principle-content">
+                <h2 class="section-title">Bizning tamoyilimiz</h2>
+                <div class="principle-text">
+                    <p>Reklama o'tadi.</p>
+                    <p>Ishonch qoladi.</p>
+                    <p class="accent">Qadr esa doimiy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- CTA Section -->
+    <section class="section section-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="section-title">Hamkorlikka tayyormisiz?</h2>
+                <div class="cta-text">
+                    <p>Agar Siz:</p>
+                    <ul>
+                        <li>brendingizni ishonchli ko'rsatmoqchi bo'lsangiz</li>
+                        <li>reklama emas, obro' xohlasangiz</li>
+                        <li>odamlar yuragiga kiradigan kontent izlayotgan bo'lsangiz</li>
+                    </ul>
+                    <p class="cta-highlight"><strong>INSON QADRI MEDIA PRODUCTION</strong> — Siz uchun.</p>
+                </div>
+                <a href="contact.html" class="btn btn-primary btn-large">Bog'lanish</a>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">INSON QADRI</span>
+                        <span class="logo-subtitle">MEDIA PRODUCTION</span>
+                    </a>
+                    <p class="footer-tagline">Mazmun orqali ishonch quramiz</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Sahifalar</h4>
+                        <nav>
+                            <a href="index.html">Bosh sahifa</a>
+                            <a href="portfolio.html">Loyihalar</a>
+                            <a href="about.html">Biz haqimizda</a>
+                            <a href="contact.html">Bog'lanish</a>
+                        </nav>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Yo'nalishlar</h4>
+                        <nav>
+                            <a href="#">Ijtimoiy kontent</a>
+                            <a href="#">Oilaviy kontent</a>
+                            <a href="#">Hayotiy syujetlar</a>
+                            <a href="#">Brend hamkorlik</a>
+                        </nav>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Bog'lanish</h4>
+                        <nav>
+                            <a href="mailto:info@insonqadri.uz">info@insonqadri.uz</a>
+                            <a href="tel:+998901234567">+998 90 123 45 67</a>
+                            <a href="#">Telegram</a>
+                            <a href="#">Instagram</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 INSON QADRI MEDIA PRODUCTION. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+ 
+    <script src="/script.js"></script>
   </body>
 </html>
